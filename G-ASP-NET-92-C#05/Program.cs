@@ -74,18 +74,33 @@
 
             //#endregion
 
-            #region Question06
+            //#region Question06
+            //// ---------
+            //// Q: Given int genreNumber = 1;, cast it into a Genre value and print the result.
+            //// ---------
+
+            //int genreNumber = 1;
+
+            //Genre genre = (Genre)genreNumber;
+
+            //Console.WriteLine(genre);
+
+            //#endregion
+
+            #region Question07
             // ---------
-            // Q: Given int genreNumber = 1;, cast it into a Genre value and print the result.
+            // Q: Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
             // ---------
 
-            int genreNumber = 1;
+            Genre genre = Genre.Fiction;
 
-            Genre genre = (Genre)genreNumber;
+            string genreText = genre.ToString();
 
-            Console.WriteLine(genre);
+            Console.WriteLine(genreText);
 
             #endregion
+
+
         }
         class Book
         {
