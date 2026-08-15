@@ -34,17 +34,31 @@
 
             //#endregion
 
-            #region Question03
+            //#region Question03
+            //// ---------
+            //// Q: Add a public string Title; field to Book.
+            //// Set it and print it from Main.
+            //// ---------
+
+            //Book book = new Book();
+
+            //book.Title = "Clean Code";
+
+            //Console.WriteLine(book.Title);
+
+            //#endregion
+
+            #region Question04
             // ---------
-            // Q: Add a public string Title; field to Book.
-            // Set it and print it from Main.
+            // Q: Declare an enum Genre { Fiction, NonFiction, Science }.
+            // Add a Genre property to Book, assign it Genre.Science, and print it.
             // ---------
 
             Book book = new Book();
 
-            book.Title = "Clean Code";
+            book.Genre = Genre.Science;
 
-            Console.WriteLine(book.Title);
+            Console.WriteLine(book.Genre);
 
             #endregion
         }
@@ -53,8 +67,13 @@
             private string password = "secret";
             internal int copiesInStock = 5;
             public string Title;
-
+            public Genre Genre { get; set; }
         }
-
+        enum Genre
+        {
+            Fiction,
+            NonFiction,
+            Science
+        }
     }
 }
