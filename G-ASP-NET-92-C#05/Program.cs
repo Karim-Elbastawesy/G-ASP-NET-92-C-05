@@ -87,16 +87,30 @@
 
             //#endregion
 
-            #region Question07
+            //#region Question07
+            //// ---------
+            //// Q: Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+            //// ---------
+
+            //Genre genre = Genre.Fiction;
+
+            //string genreText = genre.ToString();
+
+            //Console.WriteLine(genreText);
+
+            //#endregion
+
+            #region Question08
             // ---------
-            // Q: Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+            // Q: Given string genreText = "Science";, convert it into a Genre value using Enum.Parse()
+            // and print the result.
             // ---------
 
-            Genre genre = Genre.Fiction;
+            string genreText = "Science";
 
-            string genreText = genre.ToString();
+            Genre genre = Enum.Parse<Genre>(genreText);
 
-            Console.WriteLine(genreText);
+            Console.WriteLine(genre);
 
             #endregion
 
