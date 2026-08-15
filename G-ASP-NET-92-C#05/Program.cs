@@ -20,25 +20,39 @@
             //#endregion
 
 
-            #region Question02
+            //#region Question02
+            //// ---------
+            //// Q: Add an internal int copiesInStock = 5; field to Book.
+            //// Print it from Main. Does it compile? Why?
+            //// ---------
+
+            //Book book = new Book();
+
+            //Console.WriteLine(book.copiesInStock);
+
+            //// Why: It compiles because internal members can be accessed from anywhere in the same project.
+
+            //#endregion
+
+            #region Question03
             // ---------
-            // Q: Add an internal int copiesInStock = 5; field to Book.
-            // Print it from Main. Does it compile? Why?
+            // Q: Add a public string Title; field to Book.
+            // Set it and print it from Main.
             // ---------
 
             Book book = new Book();
 
-            Console.WriteLine(book.copiesInStock);
+            book.Title = "Clean Code";
 
-            // Why: It compiles because internal members can be accessed from anywhere in the same project.
+            Console.WriteLine(book.Title);
 
             #endregion
-
         }
         class Book
         {
             private string password = "secret";
             internal int copiesInStock = 5;
+            public string Title;
 
         }
 
